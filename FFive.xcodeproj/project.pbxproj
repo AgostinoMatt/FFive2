@@ -89,10 +89,10 @@
 				F772F63A20C8BB2200039367 /* GameScene.sks */,
 				F733993D20D09136003074CE /* FightScene.sks */,
 				F733994120D0A41E003074CE /* Player2Fight.sks */,
+				F71D91B520D35CB200A298B4 /* HeadlessFight.sks */,
 				F76BAD9F20DDB80B00052485 /* Mage.sks */,
 				F76BADA120DDB81200052485 /* Warrior.sks */,
 				F71D91B320D35BC600A298B4 /* ZombieFight.sks */,
-				F71D91B520D35CB200A298B4 /* HeadlessFight.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -139,11 +139,11 @@
 				F772F64520C8BB2600039367 /* Assets.xcassets */,
 				F733993C20D090C1003074CE /* Scenes */,
 				F772F63820C8BB2200039367 /* AppDelegate.swift */,
+				F76BADA320DDB8B900052485 /* Characters.swift */,
+				F74E532420DAB73F006AD624 /* FightScene.swift */,
+				F752B2AC20D1B15F00CA7566 /* FightSceneViewController.swift */,
 				F772F63E20C8BB2200039367 /* GameScene.swift */,
 				F772F64020C8BB2200039367 /* GameViewController.swift */,
-				F74E532420DAB73F006AD624 /* FightScene.swift */,
-				F76BADA320DDB8B900052485 /* Characters.swift */,
-				F752B2AC20D1B15F00CA7566 /* FightSceneViewController.swift */,
 				F772F64220C8BB2200039367 /* Main.storyboard */,
 				F772F64720C8BB2600039367 /* LaunchScreen.storyboard */,
 				F73D877720CF4BF600C5755A /* backgroundtile.sks */,

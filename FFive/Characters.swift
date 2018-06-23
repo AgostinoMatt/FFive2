@@ -16,6 +16,7 @@ protocol Character {
     func runAnimation()
 }
 
+
 class Warrior : SKSpriteNode, Character {
     var attack: Int = 10
     var health: Int = 100
@@ -108,7 +109,34 @@ class Zombie: SKSpriteNode, Character {
             [SKAction.group([moveRight, spin]),
              SKAction.group([moveLeft, spin]),
              done]))
-        
+        isPaused = false
+    }
+}
+
+class Headless: SKSpriteNode, Character {
+    var attack: Int = 10
+    var health: Int = 20
+    var magic: Int = 0
+    var exp: Int = 30
+    
+    /*var texture: [SKTexture] = []
+    
+    for i in 1...7 {
+        texture.append(SKTexture(imageNamed: "head\(i)"))
+    }
+    texture.append(texture[1])*/
+    
+    func runAnimation() {
+        let moveRight = SKAction.moveBy(x: 60, y: 0, duration: 1)
+        let moveLeft = moveRight.reversed()
+        let wait = SKAction.wait(forDuration: 0.5)
+        let done = SKAction.run() {
+            self.removeAllActions()
+        }
+        /*run(SKAction.sequence(SKAction.group([SKAction.animate(with: texture, timePerFrame: 0.5),
+                                              moveRight,])
+                              , wait, moveLeft, done]))*/
+        isPaused = false
     }
 }
 

@@ -11,6 +11,10 @@ import SpriteKit
 class FightScene: SKScene {
     var charMain: Warrior!
     var charMage: Mage!
+    var charHeavy: Heavy!
+    var enemy1: Zombie!
+    var enemy2: Headless!
+    var enemy3: Zombie!
     var secondCharacter: SKReferenceNode!
     var girl: SKReferenceNode!
     
@@ -21,7 +25,11 @@ class FightScene: SKScene {
     override func didMove(to view: SKView) {
         
         charMain = childNode(withName: "MainCharacter//character") as! Warrior
-        charMage = childNode(withName: "Girl//character") as! Mage
+        charMage = childNode(withName: "Girl//character//character") as! Mage
+        charHeavy = childNode(withName: "SecondPlayer//character") as! Heavy
+        enemy1 = childNode(withName: "Enemy1//character") as! Zombie
+        enemy2 = childNode(withName: "Enemy2//character") as! Headless
+        enemy3 = childNode(withName: "Enemy3//character") as! Zombie
         
 //        isPaused = true
 //        isPaused = false
